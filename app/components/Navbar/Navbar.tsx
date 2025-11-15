@@ -17,7 +17,7 @@ const Navbar = () => {
                 /></Link>
             </div>
             <div>
-                <ul className='flex gap-10'>
+                <ul className='flex gap-10 '>
                     <li className='hover:text-[#1E1E1E] text-[#A3A3A3]'><Link href={'/'}>Home</Link></li>
                     <li className='hover:text-[#1E1E1E] text-[#A3A3A3]'><Link href={'/'}>Features</Link></li>
                     <li className='hover:text-[#1E1E1E] text-[#A3A3A3]'><Link href={'/'}>How it Works</Link></li>
