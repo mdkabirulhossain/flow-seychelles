@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Hero = () => {
     return (
-        <div className="flex justify-between px-2 mt-20 md:px-32 lg:px-48">
+        <div className="flex justify-between flex-col sm:flex-row px-2 my-20 md:px-32 lg:px-48">
             <div className='flex flex-col justify-center'>
                 <div className='flex flex-col gap-6'>
                     <h1 className={`${inter.className} text-xs text-[#28A745]`}><span className='bg-[#28A7451F] py-2 px-5 rounded-4xl'>#1 EV Charging Station Locator App</span></h1>
@@ -21,7 +21,7 @@ const Hero = () => {
                 </div>
                 <div className='flex items-center gap-5 mt-8'>
                     <div className='flex items-center gap-1'>
-                        <Image 
+                        <Image
                             src={'/home/user.png'}
                             alt='users'
                             width={100}
@@ -34,29 +34,42 @@ const Hero = () => {
                     </div>
                     <div>
                         <h1 className='text-xl'>4.9/5</h1>
-                            <div className='flex'>
-                                <Image 
-                            src={'/home/rating.png'}
-                            alt='users'
-                            width={100}
-                            height={100}
-                        />
-                        <p className={`${inter.className} text-[#A3A3A3]`}>Rating</p>
-                            </div>
+                        <div className='flex'>
+                            <Image
+                                src={'/home/rating.png'}
+                                alt='users'
+                                width={100}
+                                height={100}
+                            />
+                            <p className={`${inter.className} text-[#A3A3A3]`}>Rating</p>
+                        </div>
                     </div>
 
                 </div>
 
 
             </div>
-            <div>
+            
+            <div className="relative flex items-center justify-center">
+
+                <div
+                    className="absolute inset-0 rounded-full blur-[90px] opacity-70"
+                    style={{
+                        background:
+                            "linear-gradient(90.37deg, rgba(1,135,208,0.5) 10.26%, rgba(21,151,138,0.5) 35.1%, rgba(40,167,69,0.5) 54.97%, rgba(159,196,33,0.5) 79.81%, rgba(252,219,5,0.5) 99.68%)"
+                    }}
+                ></div>
+
                 <Image
-                    src={"/home/hero.png"}
-                    alt="Picture of the author"
-                    width={500}
-                    height={500}
+                    src="/home/hero.png"
+                    alt="Hero"
+                    width={400}
+                    height={400}
+                    className="relative z-10"
                 />
+
             </div>
+
 
         </div>
     );
