@@ -1,14 +1,14 @@
 import Image from "next/image";
 import Navbar from "./components/Navbar/Navbar";
-import Hero from "./components/Home/Hero/Hero";
-import WhyChooseSection from "./components/Home/WhyChooseSection/WhyChooseSection";
+import HomePage from "./components/Home/HomePage/HomePage";
+
 
 export default function Home() {
   return (
     <div className="">
       <Navbar />
-      <Hero />
-      <WhyChooseSection />
+      <HomePage />
+      
     </div>
   );
 }
