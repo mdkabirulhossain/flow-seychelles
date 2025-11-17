@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Hero = () => {
     return (
-        <div className="flex justify-between flex-col sm:flex-row px-2 my-20 md:px-32 lg:px-48">
+        <div className="flex justify-between flex-col sm:flex-row my-20 px-2 md:px-32 lg:px-48">
             <div className='flex flex-col justify-center'>
                 <div className='flex flex-col gap-6'>
                     <h1 className={`${inter.className} text-xs text-[#28A745]`}><span className='bg-[#28A7451F] py-2 px-5 rounded-4xl'>#1 EV Charging Station Locator App</span></h1>
