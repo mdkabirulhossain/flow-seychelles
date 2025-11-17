@@ -14,7 +14,7 @@ const Hero = () => {
                             Download Now
                         </button>
                         <button className={`${inter.className} border-2 border-[#1E1E1E]  text-[#1E1E1E] px-6 py-2 rounded-full font-semibold`}>
-                            Explore Features
+                            Explore Features →
                         </button>
                     </div>
 
